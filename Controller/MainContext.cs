@@ -11,9 +11,11 @@ namespace DBProject.Controller
     public class MainContext : DbContext
     {
         ////////////////////////////////////////////////////////
-        public DbSet<ExampleEntity> TableName { get; set; }
-
-
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Shop> Shops { get; set; }
+        public DbSet<Item> Items { get; set; }
+        public DbSet<Purchase> Purchases { get; set; }
+        public DbSet<Provide> Providers { get; set; }
         ////////////////////////////////////////////////////////
         public String DbPath { get; }
         public MainContext()
