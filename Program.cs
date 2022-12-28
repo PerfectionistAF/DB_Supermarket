@@ -9,10 +9,9 @@ namespace DBProject
         static void Main()
         {
             // creates the database if not created.
-            var db = new Controller.MainContext();
-
+            Controller.MainContext mainContext = new Controller.MainContext();
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new MainMenu());
         }
     }
 }

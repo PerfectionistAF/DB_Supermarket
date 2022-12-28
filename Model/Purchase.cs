@@ -11,7 +11,7 @@ namespace DBProject.Model
     [PrimaryKey(nameof(MobilePhone), nameof(TaxRegNo), nameof(CountryCode), nameof(CompanyPrefix), nameof(CheckCode))]
     public class Purchase
     {
-        public int MobilePhone { get; set; }
+        public string MobilePhone { get; set; }
         public Customer Customer { get; set; }
         public int TaxRegNo { get; set; }
         public Shop Shop {get; set; }

@@ -16,7 +16,15 @@ namespace DBProject.Model
         public string Name { get; set; }
         public float Price { get; set; }
         public uint Stock { get; set; }
-        public Shop Shop { get; set; }
         public List<Purchase> Sales { get; set; }
+        public Item(int CountryCode, int CompanyPrefix, int CheckCode, string Name, float Price)
+        {
+            this.CountryCode = CountryCode;
+            this.CompanyPrefix = CompanyPrefix;
+            this.CheckCode = CheckCode;
+            this.Name = Name;
+            this.Price = Price;
+            this.Sales = new List<Purchase>();
+        }
     }
 }
